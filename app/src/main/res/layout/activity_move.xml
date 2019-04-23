@@ -25,7 +25,7 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/putri"
+                    android:src="@drawable/coba3"
                     android:background="#09c6df"/>
                 <TextView
                     android:layout_width="wrap_content"
