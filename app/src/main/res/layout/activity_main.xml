@@ -35,13 +35,16 @@
                     android:textSize="20dp"
                     android:textStyle="bold"/>
             </LinearLayout>
-            <EditText
-                android:layout_width="match_parent"
+            <Button
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:hint="Enter your masage"
-                android:id="@+id/btnU"/>
+                android:layout_margin="10dp"
+                android:background="#d67601"
+                android:id="@+id/btnU"
+                android:text="Selamat Menikmati!!"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -55,6 +58,7 @@
                     android:src="@drawable/ic_person_add_black_24dp"/>
                 <Button
                     android:id="@+id/btn_detail_activity"
+                    android:background="#d67601"
                     android:layout_width="200dp"
                     android:paddingLeft="10dp"
                     android:layout_height="wrap_content"
@@ -72,7 +76,9 @@
                     android:src="@drawable/ic_search_black_24dp"/>
                 <Button
                     android:id="@+id/btn_move_activity_data"
+                    android:background="#d67601"
                     android:layout_width="200dp"
+                    android:layout_gravity="left"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:text="Lihat Menu" />
@@ -89,6 +95,7 @@
                 <Button
                     android:id="@+id/btnShare"
                     android:layout_width="200dp"
+                    android:background="#d67601"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:text="Share"/>

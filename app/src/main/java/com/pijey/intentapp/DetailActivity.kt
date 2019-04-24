@@ -21,19 +21,19 @@ class DetailActivity : AppCompatActivity() {
         //TITLE
         supportActionBar?.title = ("Input Data")
         //SUBTITLE
-        supportActionBar?.subtitle = ("Learn Kotlin with DEVONLY")
+        supportActionBar?.subtitle = ("Learn Kotlin")
 
         btnSubmit.setOnClickListener {
-            if (edtNama.text.isEmpty() || edtAsal.text.isEmpty() || edtEmail.text.isEmpty()){
+            if (edtNama.text.isEmpty() || edtAsal.text.isEmpty() ){
                 toast("Kolom Tidak Boleh Kosong", Toast.LENGTH_LONG)
-            }else if(edtNama.text.isNotEmpty() || edtAsal.text.isNotEmpty() || edtEmail.text.isNotEmpty()){
+            }else if(edtNama.text.isNotEmpty() || edtAsal.text.isNotEmpty() ){
                 toast("Sukses", Toast.LENGTH_LONG)
                 val intent = Intent(this, SaveActivity::class.java)
                 val bundle = Bundle()
 
                 bundle.putString(NAMA, edtNama.text.toString())
                 bundle.putString(ASAL, edtAsal.text.toString())
-                bundle.putString(EMAIL, edtEmail.text.toString())
+
 
                 intent.putExtras(bundle)
                 startActivity(intent)
